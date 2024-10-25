@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate Fees</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="_images/logo_noBG.png">
+  
+</head>
+
+<body>
+
+  
+
+  <div class="bg-gradient">
+
+    <main>
+
+      <header>
+
+        <div class="navBar">
+
+          <img src="_images/logo_noBG.png" alt="Logo" class="imageSpace" />
+          <h1>
+            Empowering The Nation
+          </h1>
+          <nav class="hyperlinks">
+            <div class="box">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="space">
+              <div class="dropdown">
+                <button class="dropbtn">▼
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="cooking.html">Cooking </a>
+                  <a href="gardening.html">Garden Maintenance</a>
+                  <a href="child_minding.html">Child Minding</a>
+                </div>
+              </div>
+              <a href="six_week_courses.html">
+                <nobr>Six-Week-Courses</nobr>
+              </a>
+            </div>
+
+            <div class="space2">
+              <div class="dropdown">
+                <button class="dropbtn">▼
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="sewing.html">Sewing</a>
+                  <a href="first_aid.html">First-Aid</a>
+                  <a href="landscaping.html">Landscaping</a>
+                  <a href="life_skills.html">Life-Skills</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="six_month_courses.html"> Six-Month-Courses</a>
+            <a href="contact_us.html">Contact-Us</a>
+            <a href="calculate_fees.html">Calculate-Fees</a>
+          </nav>
+
+        </div>
+
+
+
+
+      </header>
+
+      <div class="lineBox">
+        <hr>
+      </div>
+
+      <h2>
+        Calculate-Fees
+      </h2>
+
+          <div class="checkoutContainer">
+
+            <br>
+
+            <div class="feescontainer">
+              <form id="feesForm" onsubmit="return false;">
+                <div class="row">
+                  <div class="col-25">
+                    <div class="sixmonth">
+                      <label for="lname"><strong>Six Month Courses</strong></label>
+                    </div>
+                  </div>
+                  <div class="col-75">
+                    <label class="checkbox">First-Aid (R1500.00)
+                      <input type="checkbox" data-price="1500" value="First-Aid">
+                      <span class="check"></span>
+                    </label>  
+              
+                    <label class="checkbox">Sewing (R1500.00)
+                      <input type="checkbox" data-price="1500" value="Sewing">
+                      <span class="check"></span>
+                    </label>  
+              
+                    <label class="checkbox">Landscaping (R1500.00)
+                      <input type="checkbox" data-price="1500" value="Landscaping">
+                      <span class="check"></span>
+                    </label>
+                  </div>
+                </div>
+              
+                <div class="row">
+                  <div class="col-25">
+                    <div class="sixweek">
+                      <label for="lname"><strong>Six Week Courses</strong></label>
+                    </div>
+                  </div>
+                  <div class="col-75">
+                    <label class="checkbox">Life-Skills (R750.00)
+                      <input type="checkbox" data-price="750" value="Life-Skills">
+                      <span class="check"></span>
+                    </label>  
+              
+                    <label class="checkbox">Garden Maintenance (R750.00)
+                      <input type="checkbox" data-price="750" value="Garden-Maintenance">
+                      <span class="check"></span>
+                    </label>  
+              
+                    <label class="checkbox">Child-Minding (R750.00)
+                      <input type="checkbox" data-price="750" value="Child-Minding">
+                      <span class="check"></span>
+                    </label>  
+              
+                    <label class="checkbox">Cooking (R750.00)
+                      <input type="checkbox" data-price="750" value="Cooking">
+                      <span class="check"></span>
+                    </label>
+                  </div>
+                </div>
+            
+                <hr>
+            
+                <p><center>Please fill in this form to create an account.</center></p>
+                
+                <label for="first_name"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="first_name" id="first_name" required>
+            
+                <label for="surname"><b>Surname</b></label>
+                <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>                  
+            
+                <label for="street"><b>Street</b></label>
+                <input type="text" placeholder="Enter Street" name="street" id="street" required>
+            
+                <label for="city"><b>City</b></label>
+                <input type="text" placeholder="Enter City" name="city" id="city" required>
+            
+                <label for="phone"><b>Phone Number</b></label>
+                <input type="tel" placeholder="Enter Phone Number" name="phone" id="phone" required>
+            
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                <hr>
+            
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                
+                <div class="row">
+                  <button type="button" id="calculateButton">Calculate Total</button>
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+            
+                <div class="fee-total">
+                  <p>
+                    <strong>Fee Breakdown:</strong>
+                    <span class="value">R0.00</span> 
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+
+    </main>
+
+    <div class="lineBox">
+      <hr>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="box1">
+          <h3 class="footer-align-contact">
+            Contact Information
+          </h3>
+
+          <p>
+            <strong>Email:</strong> info@empoweringthenation.co.za
+          </p>
+
+
+          <strong>Address(s):
+
+
+          </strong>
+          <div class="alignBox">
+            <p></p>
+            <nobr>
+              148 Ameshoff St, Braamfontein, Johannesburg
+            </nobr>
+            <nobr>
+              Colorado Dr, Riverlea, Johannesburg, 2093
+            </nobr>
+            <nobr>
+              4 Long Ave Glenhazel, Johannesburg, Gauteng
+            </nobr>
+            </p>
+          </div>
+
+
+
+          <p>
+            <strong>Contact Number(s):</strong>
+            <nobr>072-432-9265</nobr>
+            <nobr>063-568-5523</nobr>
+          </p>
+        </div>
+
+        <div class="box4">
+          <img src="./_images/logo_noBG.png">
+        </div>
+
+        <div class="box2">
+          <h3 class="footer-align-links">Quick Links</h3>
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="six_month_courses.html">Six Month Courses</a></li>
+            <li><a href="six_week_courses.html">Six Week Courses</a></li>
+            <li><a href="calculate_fees.html">Calculate Fees</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="box3">
+        <p>&copy; 2018 Empowering The Nation</p>
+      </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+  </div>
+  </div>
+</body>
+
+</html>
