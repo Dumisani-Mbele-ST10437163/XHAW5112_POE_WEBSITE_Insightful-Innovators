@@ -13,6 +13,8 @@ Video Link: https://youtu.be/g0McDbYh9E8
 
 Steps to using the website:
 
+
+
 Step 1: Download the zip folder containing all of the resourcees for the website
 Step 2: Unzip the folder in a safe place on a computer/desktop
 Step 3: Open the folder through an IDE such as Visual Studio Code
@@ -29,3 +31,5 @@ Step 13: Select the contact tab in the top navigation bar to navigate to the con
 Step 14: Once you have landed on the contact page, evaluate the contact details included on the screen
 Step 15: Select the drop down and look at the 3 venues listed
 Step 16: Upon selection of a location in the drop down the map beneath the drop down will update to the selected location, so you would select the location nearest to you so that you can find your way to the nearest venue
+
+[Summative Project-Insightful Innovators- Group8 - Group Report.docx](https://github.com/user-attachments/files/17780729/Summative.Project-Insightful.Innovators-.Group8.-.Group.Report.docx)
