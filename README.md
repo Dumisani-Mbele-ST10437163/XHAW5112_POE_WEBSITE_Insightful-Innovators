@@ -9,6 +9,8 @@ Walmor Vicente - ST10458636
 Fernando Walcires - ST10459259 
 Abduraghaman Mohamed - ST10456904
 
+Video Link: https://youtu.be/g0McDbYh9E8
+
 Steps to using the website:
 
 Step 1: Download the zip folder containing all of the resourcees for the website
