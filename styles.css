@@ -559,14 +559,17 @@ a:hover {
   display: block;
 }
 
-.checkoutContainer{
+.checkoutContainer {
   display: flex;
-  border-radius: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
   background-color: hsl(0, 0%, 100%);
-  padding: 10px;
-  margin-left: 440px;
-  width: 600px;
-  height: 1700px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .checkbox{
@@ -636,11 +639,32 @@ a:hover {
   padding-right: 0px;
 }
 
-.feescontainer{
-  display: flex;
-  column-gap: 350px;
-  margin: 100px;
-  color: #062449;
+.feescontainer {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #676bbc;
+  border-radius: 10px;
+  background-color: #f3f3f9;
+}
+
+.formContainer {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #676bbc;
+  border-radius: 10px;
+  background-color: #f5f9f3;
+}
+
+#calculateButton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #6587a8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* Style inputs, select elements and textareas */
@@ -706,7 +730,27 @@ input[type=submit] {
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #e1eeff;
+  border-radius: 10px;
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #e1eeff;
+  border-radius: 10px;
+}
+
+input[type=tel], input[type=password] {
+  width: 100%;
+  padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
@@ -791,6 +835,11 @@ a {
   right: 0;
 }
 
+#totalDisplay {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1em;
+  color: #333;
+}
 
 /* contact us page  Css*/
 
@@ -1411,4 +1460,65 @@ button:hover {
 
 #lifeSkillsFooter {
   margin-top: 20px; /* Adjust as needed */
+}
+
+.backbutton {
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  color: #112358;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+}
+
+.backbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.backbutton span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.backbutton:hover span {
+  padding-left: 25px;
+}
+
+.backbutton:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+/* Modified line styles */
+.backbutton::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 100px; /* Initial line width */
+  height: 2px;
+  background-color: #6c8be9;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.backbutton:hover::before {
+  width: 60px; /* Extended line width on hover */
+}
+header {
+  position: relative;
 }
