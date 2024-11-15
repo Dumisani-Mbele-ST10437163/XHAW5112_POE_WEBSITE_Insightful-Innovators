@@ -91,49 +91,31 @@ document.addEventListener("DOMContentLoaded", function () {
       return 0; // No discount for 1 course
     }
   
-    function calculateTotal(e) {
-      e.preventDefault();
-      console.log("Calculating total...");
-  
+    function calculateTotal() {
       let subtotal = 0;
-      selectedCourses = [];
-  
+      const selectedCourses = [];
       const checkedCourses = document.querySelectorAll('input[type="checkbox"]:checked');
-  
+    
       checkedCourses.forEach(checkbox => {
         const price = parseFloat(checkbox.dataset.price);
         subtotal += price;
-        selectedCourses.push({
-          name: checkbox.value,
-          price: price
-        });
+        selectedCourses.push({ name: checkbox.value, price });
       });
-  
+    
       const discount = calculateDiscount(subtotal, checkedCourses.length);
       const totalAfterDiscount = subtotal - discount;
       const vat = totalAfterDiscount * VAT_RATE;
       const finalTotal = totalAfterDiscount + vat;
-  
-      // Determine discount percentage
-      let discountMessage = 'No discount';
-      if (checkedCourses.length === 2) {
-        discountMessage = '5% discount applied';
-      } else if (checkedCourses.length === 3) {
-        discountMessage = '10% discount applied';
-      } else if (checkedCourses.length > 3) {
-        discountMessage = '15% discount applied';
-      }
-  
+    
+      // Display the total in the added div
       totalDisplay.innerHTML = `
         <div class="fee-breakdown">
           <p>Subtotal: R${subtotal.toFixed(2)}</p>
-          <p>Discount: -R${discount.toFixed(2)} (${discountMessage})</p>
+          <p>Discount: -R${discount.toFixed(2)}</p>
           <p>VAT (15%): R${vat.toFixed(2)}</p>
           <p><strong>Final Total: R${finalTotal.toFixed(2)}</strong></p>
         </div>
       `;
-  
-      console.log("Selected courses:", selectedCourses);
     }
   
     function validateForm(e) {
